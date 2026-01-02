@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+header{
+
+    
+   
+}
+
+.navbar{
+    display: absolute;
+}
+.navbar .top-bar{
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 60px 50px 60px 50px;
+}
+
+.navbar .top-bar nav li{
+    display: inline-block;
+    margin: 5px 15px;
+
+
+}
+
+.navbar .top-bar nav li a{
+    position: relative;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 800;
+    justify-content: space-around;
+  
+}
+
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    color: rgb(0, 255, 234);
+    background-color:rgb(0, 255, 234);  /* underline color */
+    transition: width 0.3s ease;
+}
+
+/* hover effect */
+nav ul li a:hover::after {
+    width: 100%;
+}
+.navbar .top-bar .logo img{
+    width: 70px;
+    height: auto;
+    border: rgba(55, 0, 255, 0.322) 1px solid;
+    border-radius: 100px;
+}
+
+nav li .visit{
+    border: 2px solid #ffffff;
+    padding:2px 8px;
+    margin-left: -5px;
+    border-radius: 9px;
+}
+
+nav li .visit:hover{
+    color: red;
+    transition: 0.3s;
+}
+
+.navbar .top-bar h1{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.navbar .top-bar .logo{
+    
+    
+}
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background img{
+    width: 100%;
+}
+
+.logo{
+    
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    margin-left: 30px;
+    font-size: 32px;
+    color: white;
+}
+.logo h1:hover{
+    color:rgb(0, 255, 234);
+    transition: 0.3s ease-in-out;
+}
+
+.logo img{
+    width: 80px;
+    height: auto;
+    border: rgba(55, 0, 255, 0.322) 2px solid;
+    border-radius: 100px;
+    margin-left: 10px;
+}
+
+
+nav .Visit{
+    padding:10px 25px;
+    border:2px solid #fff;
+    background-color: #fff;
+    color: black;
+    font-weight: 500;
+    border-radius: 100px;
+    margin: bottom: 5px;
+
+}
+nav .Visit:hover{
+    
+    transition: 0.3s;
+    background-color: transparent;
+    color: rgb(0, 255, 234);
+    border: 2px solid rgb(0, 255, 234);
+}
+
+.homepage{
+    background-color: antiquewhite;
+}
