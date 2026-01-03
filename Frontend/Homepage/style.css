@@ -1,164 +1,196 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
 
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
-}
-
-
-
-header{
-
-    
-   
-}
-
-.navbar{
-    display: absolute;
-}
-.navbar .top-bar{
-    backdrop-filter: blur(2px);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 50px;
-    padding: 60px 50px 60px 50px;
-}
-
-.navbar .top-bar nav li{
-    display: inline-block;
-    margin: 5px 15px;
-
-
-}
-
-.navbar .top-bar nav li a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
     position: relative;
-    font-size: 20px;
-    color: #ffffff;
-    font-weight: 800;
-    justify-content: space-around;
-  
 }
-
-
-nav ul li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0;
-    height: 2px;
-    color: rgb(0, 255, 234);
-    background-color:rgb(0, 255, 234);  /* underline color */
-    transition: width 0.3s ease;
-}
-
-/* hover effect */
-nav ul li a:hover::after {
-    width: 100%;
-}
-.navbar .top-bar .logo img{
-    width: 70px;
-    height: auto;
-    border: rgba(55, 0, 255, 0.322) 1px solid;
-    border-radius: 100px;
-}
-
-nav li .visit{
-    border: 2px solid #ffffff;
-    padding:2px 8px;
-    margin-left: -5px;
-    border-radius: 9px;
-}
-
-nav li .visit:hover{
-    color: red;
-    transition: 0.3s;
-}
-
-.navbar .top-bar h1{
-    color: #ffffff;
-    font-size: 40px;
-    font-weight: 600;
-}
-
-.navbar .top-bar .logo{
-    
-    
-}
-.background{
+header{
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
-}
-
-.background img{
-    width: 100%;
-}
-
-.logo{
+    z-index: 1000;        /* Ensures header stays above the image */
     
-    width: 50%;
+    /* Blurry effect */
+    background-color: rgba(255, 255, 255, 0.267); /* Semi-transparent white */
+    backdrop-filter: blur(3px);               /* The blur effect */   /* Support for Safari */
+}
+
+
+header .navbar{
     display: flex;
-    align-items: center;
-    position: relative;
-
     
+    padding: 0 40px;
+
+
+
+}
+
+header .navbar .top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding:20px 40px 20px 40px;
+}
+
+header .navbar .top-bar .logo{
+    display: flex;
+    width: 40%;
+
+
 }
 
 .logo a{
     display: flex;
     align-items: center;
+
+    
+
 }
 
-.logo h1{
-    margin-left: 30px;
-    font-size: 32px;
-    color: white;
+.logo a h1{
+    padding: 0 30px 0 30px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    position: relative;
+   
+    
 }
-.logo h1:hover{
-    color:rgb(0, 255, 234);
+
+.logo a h1::after{
+    content: "";
+    position: absolute;
+    left: 30px;
+    bottom: -5px;
+    width:0;
+    height:3px;
+    background-color: rgb(0, 255, 255);
+    transition: 0.3s ease-in-out;
+
+}
+.logo a h1:hover::after {
+    /* calc(100% - 50px) accounts for 25px padding on both sides */
+    width: calc(100% - 50px); 
+}
+
+.logo a img{
+
+
+    width:6vh;
+    border: 2px solid blue;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+
+
+
+
+header .navbar .top-bar nav li a {
+    text-decoration: none;
+    padding: 0 25px; /* Shorthand for top/bottom 0, left/right 25px */
+    color: rgb(255, 255, 255);
+    font-weight: 500; /* Removed px */
+    position: relative;
+}
+
+nav li a::after {
+    content: "";
+    position: absolute;
+    left: 25px; /* Starts where the text starts */
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: aqua;
     transition: 0.3s ease-in-out;
 }
 
-.logo img{
-    width: 80px;
-    height: auto;
-    border: rgba(55, 0, 255, 0.322) 2px solid;
-    border-radius: 100px;
-    margin-left: 10px;
+nav li a:hover::after {
+    /* calc(100% - 50px) accounts for 25px padding on both sides */
+    width: calc(100% - 50px); 
 }
 
-
-nav .Visit{
-    padding:10px 25px;
-    border:2px solid #fff;
-    background-color: #fff;
-    color: black;
-    font-weight: 500;
-    border-radius: 100px;
-    margin: bottom: 5px;
-
+.top-bar nav button{
+    padding: 10px 30px;
+    border: 2px white solid;
+    border-radius:100px;
+    background-color: white;
+    font-weight: 300;
+    transition: 0.3s ease-in-out;
 }
-nav .Visit:hover{
+
+.top-bar nav button:hover{
+    border: 2px white solid;
+    border-radius:100px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
     
-    transition: 0.3s;
-    background-color: transparent;
-    color: rgb(0, 255, 234);
-    border: 2px solid rgb(0, 255, 234);
 }
 
-.homepage{
-    background-color: antiquewhite;
+
+.top-bar nav li{
+    list-style: none;
+    display: inline;
+}
+
+.background{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.background img{
+    width: 100%;
+    height: 1000px;
+
+}
+.home{
+    position: absolute;
+    width: 85%;
+    height: 300px;
+}
+
+.home h1{
+    color: white;
+    font-weight: bold;
+    font-size: 95px;
+}
+.home h2{
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+
+}
+.home p{
+    color: white;
+    font-size: 30px;
+}
+
+.btn .Get-involved{
+    
+    padding:15px 60px;
+    border: 2px solid white;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.btn .Visit{
+    padding:15px 40px;
+    border:2px solid white;
+    border-radius:100px ;
+    background-color: white;
+    color: black;
+    font-size: 20px;
 }
