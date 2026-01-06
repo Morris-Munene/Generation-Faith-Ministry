@@ -158,39 +158,88 @@ nav li a:hover::after {
     position: absolute;
     width: 85%;
     height: 300px;
+    display: inline-block;
 }
 
 .home h1{
     color: white;
     font-weight: bold;
     font-size: 95px;
+    position: relative;
+    display: inline;
+    margin-bottom:10px ;
+}
+
+.home h1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width:0;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s ease-in-out;
+
+}
+
+.home h1:hover::after{
+    width: 100%;
+
 }
 .home h2{
     color: white;
     font-weight: bold;
     font-size: 70px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.home h2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width:0;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s ease-in-out;
+
+}
+.home h2:hover::after{
+    width: 40%;
 
 }
 .home p{
     color: white;
-    font-size: 30px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.btn{
+    position: relative;
 }
 
 .btn .Get-involved{
-    
-    padding:15px 60px;
+    position: absolute;
+    padding:15px 30px;
     border: 2px solid white;
     border-radius: 100px;
     background-color: rgba(255, 255, 255, 0);
     color: rgb(255, 255, 255);
     font-size: 20px;
+    margin-left: 160px;
+    transition: 0.3s ease-in-out;
+
 }
 
 .btn .Visit{
+    position: absolute;
     padding:15px 40px;
     border:2px solid white;
     border-radius:100px ;
     background-color: white;
     color: black;
     font-size: 20px;
+
+
 }
+
