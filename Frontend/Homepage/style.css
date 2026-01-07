@@ -218,7 +218,6 @@ nav li a:hover::after {
     position: relative;
 }
 
-.btn .Get-involved{
 .btn .btn-get-involved{
     position: absolute;
     padding:15px 30px;
@@ -232,7 +231,6 @@ nav li a:hover::after {
 
 }
 
-.btn .Visit{
 .btn .btn-visit{
     position: absolute;
     padding:15px 40px;
@@ -271,7 +269,6 @@ nav li a:hover::after {
     font-family: proxima nova;
 
 }
-.section-content .Visit{
 .section-content .btn-visit{
     padding:15px 30px;
     border: 2px solid black;
@@ -283,13 +280,11 @@ nav li a:hover::after {
     transition: 0.3s ease-in-out;
 
 }
-.section-content .Visit:hover{
 .section-content .btn-visit:hover{
     background-color: rgb(1, 175, 255);
     color: rgb(255, 255, 255);
     border:2px solid rgb(1, 175, 255);
 }
-.section-content .Get-involved{
 .section-content .btn-get-involved{
     padding:15px 30px;
     border: 1px solid black;
@@ -303,7 +298,6 @@ nav li a:hover::after {
 
 }
 
-.section-content .Get-involved:hover{
 .section-content .btn-get-involved:hover{
     background-color: rgb(219, 219, 219);
 }
@@ -360,9 +354,8 @@ nav li a:hover::after {
 }
 .left-content{
     display: inline-block;
-    
+    border: 2px solid blca;
     height: 100%;
-    b
 }
 
 .Info-section .left-content h2{
@@ -380,4 +373,3 @@ nav li a:hover::after {
     font-weight: 400;
     line-height: 1.67rem;
 }
-
