@@ -347,15 +347,25 @@ nav li a:hover::after {
 
 .events-section .Info-section{
     width: 75%;
-    
+    border: 2px solid black;
+    display: flex;
     height: 90%;
-
-
+    position: relative;
 }
 .left-content{
     display: inline-block;
-    border: 2px solid blca;
+    border: 2px solid black;
     height: 100%;
+    width: 30%;
+    position: absolute;
+}
+
+.left-content .content{
+    display: inline-block;
+    border:2px solid black;
+    position: sticky;
+    padding:40px  0 ;
+    top:0;
 }
 
 .Info-section .left-content h2{
@@ -372,4 +382,29 @@ nav li a:hover::after {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.67rem;
+}
+
+.Info-section .left-content button{
+    padding: 10px 30px;
+    border: 2px solid black;
+    border-radius: 100px;
+    color: white;
+    background-color: black;
+}
+
+.event {
+    width: 70%;
+    height: 100%;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Box-content {
+    border: 2px solid black;
+    flex: 1;
+}
+
+.sermon-section{
+    background-color: white;
 }
