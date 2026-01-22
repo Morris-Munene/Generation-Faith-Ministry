@@ -313,7 +313,7 @@ nav li a:hover::after {
 .animated-img-track {
     display: flex;
     width: max-content; /* Important: prevents images from wrapping to the next line */
-    animation: scrollInfinite 50s linear infinite;
+    animation: scrollInfinite 30s linear infinite;
 }
 
 .animated-img-track span {
@@ -336,6 +336,7 @@ nav li a:hover::after {
         transform: translateX(-50%);
     }
 }
+
 
 
 .events-section{
